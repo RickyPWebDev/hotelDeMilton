@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hotel de milton-Ricky Phillips</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- This markup sets up the heading section and 
+  navigation bar-->
+    <div class="heading">
+          <H1 class="heading-1">Hotel de milton</H1>
+          <p class="heading-2">"Your new home away from home"</p>
+          <div class="nav-bar">
+            <ul class="nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="booking.html">Rooms</a></li>
+
+            <!--Nested Drop down box markup-->
+              <div class="dropdown">
+                <button class="dropbtn"> Book a room here!</button>
+                <div class="dropdown-content">
+                  <a href="penthouse.html">Penthouse Suite</a>
+                  <a href="grand-suite.html">Grant suite</a>
+                  <a href="junior-suite.html">Junior Suite</a>
+                  <a href="family-suite.html">Family Suite</a>
+                  <a href="deluxe-room.html">Deluxe Room</a>
+                  <a href="standard-room.html">Standard Room</a>
+                </div>
+
+              <li><a href="facilities.html">Facilities page</a></li>
+              <li><a href="location.html">Location</a></li>
+            </ul>
+          </div>
+      </div>
+
+      <div class="booking-page">
+        <h1>Welcome to the rooms page.</h1>
+        <br>
+        <p>Please click an image below to see a description, check availablity and to book one of our rooms.</p>
+      </div>
+      
+      <!-- with this section on hover the text was dropping down futher
+      the solution I could find at the moment is to put the room description 
+      above image 
+      (Tried using Z-index, padding, margin rules on hover, opaque rules)
+     -->
+    <div class="booking-grid">
+         <div> 
+          <p id="room-id"> - Penthouse suite</p> 
+          <a class="view" href="penthouse.html"> <img class="booking-images" src="./imgs/penthouse-suite.jpg" alt="penthouse suite"> </a>
+        
+        </div>
+
+        <div> 
+          <p id="room-id"> - Grand Suite</p>
+          <a class="view" href="grand-suite.html"> <img class="booking-images" src="./imgs/grand-suite.jpg" alt="grand-suite"> </a>
+        
+        </div>
+
+        <div> 
+          <p id="room-id"> - Junior Suite</p>
+          <a class="view" href="junior-suite.html"> <img class="booking-images" src="./imgs/junior-suite.jpg" alt="junior-suite"> </a>
+          
+        </div>
+
+        <div> 
+          <p id="room-id"> - Family suite</p>
+          <a class="view" href="family-suite.html"> <img class="booking-images" src="./imgs/Family-suite.jpg" alt="family-suite"> </a>
+        
+        </div>
+
+        <div> 
+          <p id="room-id"> - Deluxe Room</p>
+          <a class="view" href="deluxe-room.html"> <img class="booking-images" src="./imgs/delux-room.jpg" alt="deluxe Room"> </a>
+          
+        </div>
+
+        <div> 
+          <p id="room-id"> - Standard Room </p>
+          <a class="hover" href="standard-room.html"> <img class="booking-images" src="./imgs/standard-room.jpg" alt="Standard Room"> </a>
+            
+        </div>
+
+    </div>
+
+    <hr>
+
+  <footer>
+    <p>"Your new home away from home"</p>
+    <p> &copy; Ricky Phillips | Hotel de milton</p>
+    <p> All images courtesy of https://unspash.com/s/photos/hotel </p>
+  </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,430 @@
+/* resets defualt styling rules */
+* {
+    padding:0;
+    font-size:20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* style rules for heading section */
+.heading {
+    width: 100%;
+    height:20%;
+    background-color:#faf39b;
+    background-image: linear-gradient(#faf39b,#9b8961)
+    
+
+}
+/* heading-1 and heading-2 
+"hotel de milton and tag line */
+.heading-1 {
+    padding-top:5rem;
+    padding-left:5rem;
+    font-size:2.5rem;
+    color:black;
+    animation-name :moveInLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+
+}
+
+.heading-2 {
+    padding-top:1.5rem;
+    padding-left:5rem;
+    color:black;
+    font-size:2rem;
+    animation-name: moveInRight;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+
+.nav-bar {
+    background-color:black;
+    width:100%;
+    height:20%;
+    margin-top:2rem
+}
+
+nav,li,a {
+    display:inline-block;
+    color:white;
+    padding-right:20px;
+    padding-left:20px;
+    margin-top:10px;
+    font-size:30px;
+    text-decoration:none;
+}
+
+a:hover {
+    background-color:lightgray;
+    height:100%;
+    width:100%;
+    color:black;
+}
+
+.top-text {
+    margin-top:1.5rem;
+    font-size: 20px;
+
+
+}
+
+.flexbox-container{
+display:flex;
+flex-direction: row;
+justify-content:space-around;
+align-content:center;
+}
+
+.flexbox-container-2 {
+display:flex;
+justify-content:space-around;
+align-content:center;
+
+}
+
+.food {
+    width:250px;
+    height:250px;
+    float:right;
+}
+.flexbox-item {
+width:50%;
+margin:5px;
+
+}
+
+.flexbox-item-1 {
+    min-height:200px;
+
+}
+
+.flexbox-item-2 {
+    min-height:200px;
+}
+
+.flexbox-item-3 {
+    margin-top:10%;
+    min-height:100px;
+}
+
+.flexbox-item-4 {
+    margin-top:10%;
+    min-height:200px;
+}
+
+.img-1 {
+    width:300px;
+    height:300px;
+}
+
+.facilities{
+    color:black;
+    font-size: 20px;
+    display:block;
+    list-style-type: square;
+}
+
+.info {
+    text-align: left;
+}
+
+.slide {
+    width:250px;
+    height:250x;
+}
+
+.photo-galary {
+    width: 60%;
+    overflow: auto;
+    margin: 100px auto;
+}
+
+footer {
+    text-align: center;
+}
+/* This is all the styling for the photo 
+galary */
+
+.container {
+    width: 90%;
+    height:50%
+    overflow:auto;
+    margin: 100px auto;
+}
+
+.box img {
+    width: 100px;
+    height: 100px;
+    padding:10px;
+}
+
+.full-image {
+    width: 580px;
+    height: 580px;
+    padding: 10px;
+}
+.col {
+    float: left;
+}
+
+.full-image img {
+    width: 100%;
+    height: 100%;
+    animation: ani .5s linear 1;
+}
+
+.book {
+    color:black;
+}
+.book{
+    background-color:#9b8961;
+}
+
+.page-2 {
+    font-size:30px;
+}
+
+/*These styles are for the booking page */
+
+.booking-page {
+    text-align: center;
+    margin-top:5rem;
+}
+
+/*This provides the animation affect for
+image change */
+@keyframes ani {
+    0% {opacity: .1;} 
+    100%{opacity: 1;}
+}
+
+
+/* title animations */
+@keyframes moveInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(100px); }
+    80% {
+      transform: translateX(-10px); }
+    100% {
+      opacity: 1;
+      transform: translate(0); } }
+  
+  @keyframes moveInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(-100px); }
+    80% {
+      transform: translateX(10px); }
+    100% {
+      opacity: 1;
+      transform: translate(0); } }
+  
+  @keyframes moveInBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(30px); }
+    100% {
+      opacity: 0;
+      transform: translate(0px); } }
+  
+      /*drop down box styling */
+      .dropbtn {
+        background-color: black;
+        color: white;
+        padding: 16px;
+        font-size: 30px;
+        border: none;
+      }
+      
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+      
+      .dropdown:hover .dropdown-content {
+        display: block;}
+      
+      .dropdown:hover .dropbtn {
+        background-color: black;
+    }
+
+.para-1 {
+    text-align:center;
+}
+
+
+.booking-page-img {
+    width:500px;
+    height:350px;
+    margin-left:33%;
+    margin-right:33%;
+    border-radius:10px;
+}
+
+.input-form{
+    width:50%;
+    padding-left:33%;
+    display:inline-block;
+    overflow:show;
+    width:auto;
+    
+    
+}
+
+fieldset {
+    width:50%;
+}
+
+.booking-images {
+    width:250px;
+    height:250px;
+
+}
+.booking-image, a:hover {
+    background-color:white;
+
+}
+
+/*Tried to solve problem where text dispears while hover over image */
+
+.view:hover {
+    background-color:white;
+    padding-bottom:0px;
+    
+
+}
+
+
+.booking-grid {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+
+}
+
+.booking-grid{
+    background-color:white;
+}
+
+.float-container {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.facilities {
+    text-align:center;
+}
+
+.spa-img {
+    width: 350px;
+    height:250px;
+}
+
+.breakfast-img {
+    width: 350px;
+    height: 250px;
+}
+
+.location {
+    text-align: center;
+}
+
+.map {
+    width:500px;
+    height:500px;
+}
+
+  
+
+
+/* Repsonsive design */
+
+@media screen and (max-width: 800px) {
+
+    nav,li,a {
+        display:inline;
+        color:white;
+        padding-right:10px;
+        padding-left:10px;
+        margin-top:10px;
+        font-size:30px;
+        text-decoration:none;
+    }
+    
+    a:hover {
+        background-color:lightgray;
+        height:100%;
+        width:100%;
+        color:black;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+
+ .heading {
+        width: 100%;
+        height:20%;
+        background-color:#faf39b;
+        background-image: linear-gradient(#faf39b,#9b8961)
+    }
+
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .heading {
+        width: 180%;
+        height:20%;
+        background-color:#faf39b;
+        background-image: linear-gradient(#faf39b,#9b8961)
+    }
+
+    .heading-1 {
+        padding-top:5rem;
+        padding-left:5rem;
+        margin-right:5rem;
+        font-size:2.5rem;
+        color:black;
+        animation-name :moveInLeft;
+        animation-duration: 2s;
+        animation-timing-function: ease-out;
+    
+    }
+    
+    .heading-2 {
+        padding-top:1.5rem;
+        padding-left:5rem;
+        padding-right:5rem;
+        color:black;
+        font-size:2rem;
+        animation-name: moveInRight;
+        animation-duration: 2s;
+        animation-timing-function: ease-out;
+    }
+
+
+}

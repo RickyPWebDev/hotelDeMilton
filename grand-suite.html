@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hotel de milton-Ricky Phillips</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- This markup sets up the heading section and 
+  navigation bar-->
+    <div class="heading">
+          <H1 class="heading-1">Hotel de milton</H1>
+          <p class="heading-2">"Your new home away from home"</p>
+          <div class="nav-bar">
+            <ul class="nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="booking.html">Rooms</a></li>
+            
+              <!--Nested Drop down box markup-->
+              <div class="dropdown">
+                <button class="dropbtn"> Book a room here!</button>
+                
+                <div class="dropdown-content">
+                  <a href="penthouse.html">Penthouse Suite</a>
+                  <a href="grand-suite.html">Grand Suite</a>
+                  <a href="junior-suite.html">Junior Suite</a>
+                  <a href="family-suite.html">Family Suite</a>
+                  <a href="deluxe-room.html">Deluxe Room</a>
+                  <a href="standard-room.html">Standard Room</a>
+                </div>
+
+              </div>
+
+              <li><a href="facilities.html">Facilities page</a></li>
+              <li><a href="location.html">Location</a></li>
+            </ul>
+          </div>
+      </div>
+
+
+
+<main>
+
+    <div class="para-1">
+      <h1>Royal Penhouse Suite</h1>
+
+    <p>The Royal Penthouse Suite is our most luxurious suite in the hotel, 
+      because of its size and location within the hotel it does tend to get
+      booked up very quickly. To book the Royal Penthouse Suite, simply complete
+      the below form and choose the dates you require from the calendar, please 
+      make sure that you have chosen the correct room type before clicking send.</p>
+    </div>
+
+    <div class="container float-container">
+
+      <div class="col">
+    
+          <div class="box"><img src="./imgs/grand-suite-room-1.jpg" alt="slide image 1"></div>
+          <div class="box"><img src="./imgs/grand-suite-bathroom-1.jpg" alt="slide image 2"></div>
+          <div class="box"><img src="./imgs/grand-suite-living-1.jpg" alt="slide image 4"></div>
+          <div class="box"><img src="./imgs/hotel-bar.jpg" alt="slide image 4"></div>
+          <div class="box"><img src="./imgs/hotel-resturant.jpg" alt="slide image 5"></div>
+          <div class="box"><img src="./imgs/grand-suite-master.jpg" alt="slide image 6"></div>
+    
+      </div>
+           <div class="col">
+              <div class="full-image">
+                  <img src="./imgs/slide-1.jpg">
+              </div>
+
+           </div>
+      
+
+           <div class="input-form float-container">
+      
+            <form>
+                <fieldset>
+                <legend class="legend">Book This room</legend>
+      
+                <label class="label" for="f-name">First name:</label>
+                <input type="text" id="fname" required>
+               <br><br>
+                <label for="l-name">Last name:</label>
+                <input type="text" id="l-name" required>
+                <br><br>
+                <label for="email">Email: &nbsp; &nbsp; &nbsp; &nbsp;</label>
+                <input type="email" id="email" required>
+                <br><br>
+      
+                <label for="phone">Phone no: &nbsp;</label>
+                <input type="number" id="number">
+                <br><br>
+      
+                <label for="visitors">Visitors: &nbsp; &nbsp; </label>
+                <select id="visitors" name="visitors">
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+                <br><br>
+      
+                <label for="room">Select number of beds: </label>
+                <select id="room" name="room">
+                  <option value="Number of beds needed">1</option>
+                  <option value="Number of beds needed">2</option>
+  
+                </select>      
+                <input type="date"> 
+                <br> <br>
+                <button>Submit</button> 
+              </fieldset>
+            </form> 
+               
+            </div>
+
+    </div>
+
+        <br>
+
+</main>
+
+ <hr>
+
+<footer>
+  <p>"Your new home away from home"</p>
+  <p> &copy; Ricky Phillips | Hotel de milton</p>
+  <p> All images courtesy of https://unspash.com/s/photos/hotel </p>
+</footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
+
+    
